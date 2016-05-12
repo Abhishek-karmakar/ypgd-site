@@ -261,3 +261,6 @@ html, body {
 .device-table tr th {
   text-align: center;
 }
+.mdl-demo section.section--center {
+  max-width: 1080px;
+}
