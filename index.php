@@ -160,7 +160,7 @@
                 <p>Our review process</p>
 
                 <div class="code-review-section">
-                  <a href="#">
+                  <a href="http://codereview.yuplaygod.com/">
                     <i class="fa fa-chevron-circle-right fa-3x" aria-hidden="true"></i><br>
                     Go to codereview
                   </a>
@@ -192,7 +192,7 @@
                 </ul>
 
                 <div class="code-review-section">
-                  <a href="#">
+                  <a href="http://codereview.yuplaygod.com/">
                     <i class="fa fa-chevron-circle-right fa-3x" aria-hidden="true"></i><br>
                     Go to codereview
                   </a>
