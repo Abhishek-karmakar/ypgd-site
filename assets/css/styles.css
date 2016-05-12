@@ -251,7 +251,7 @@ html, body {
 .mdl-demo .mdl-menu__container {
   z-index: 99;
 }
-.bg-white {
-  background: #fff;
-  color: #000;
+.code-review-section {
+  display: inline-block;
+  text-align: center;
 }
