@@ -83,7 +83,7 @@
           <a href="#codereview" class="mdl-layout__tab">Code review</a>
           <a href="#projects" class="mdl-layout__tab">Projects</a>
           <a href="#downloads" class="mdl-layout__tab">Downloads</a>
-          <a href="#forums" class="mdl-layout__tab">Forums</a>
+          <a href="#forums" class="mdl-layout__tab forums">Forums</a>
         </div>
       </header>
       <main class="mdl-layout__content">
@@ -480,5 +480,7 @@
       </main>
     </div>
     <script src="assets/js/material.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
+    <script src="assets/js/custom.js"></script>
   </body>
 </html>
