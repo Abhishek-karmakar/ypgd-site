@@ -251,6 +251,9 @@ html, body {
 .mdl-demo .mdl-menu__container {
   z-index: 99;
 }
+.no-bullets {
+  list-style-type: none;
+}
 .code-review-section {
   display: inline-block;
   text-align: center;
