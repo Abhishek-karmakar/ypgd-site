@@ -1,0 +1,35 @@
+<?php
+
+// response json
+$json = array();
+
+/**
+ * Registering phone image information
+ * Store details in yuphonesimageinfo table
+ * filename, md5sum, deviceid, build_timestamp, changelog
+ */
+if (isset($_POST["filename"]) && isset($_POST["md5sum"]) && isset($_POST["deviceid"]) && isset($_POST["changelog"]) 
+{
+    $filename = $_POST["filename"];
+    $md5sum = $_POST["md5sum"];
+    $deviceid = $_POST["deviceid"]; // device ID
+    $changelog = $_POST["changelog"];
+    // Store user details in db
+    include_once './db_functions.php';
+    include_once './GCM.php';
+
+    $db = new DB_Functions();
+    $gcm = new GCM();
+
+    $res = $db->storeUser($name, $email, $gcm_regid);
+
+    $registatoin_ids = array($gcm_regid);
+    $message = array("product" => "shirt");
+
+    $result = $gcm->send_notification($registatoin_ids, $message);
+
+    echo $result;
+} else {
+    // user details missing
+}
+?>
