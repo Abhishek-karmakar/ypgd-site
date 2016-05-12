@@ -424,8 +424,10 @@
           </section>
         </div><!-- Downloads -->
 
+        <!-- Footer -->
         <footer class="mdl-mega-footer">
           <div class="mdl-mega-footer--middle-section">
+          <!--
             <div class="mdl-mega-footer--drop-down-section">
               <input class="mdl-mega-footer--heading-checkbox" type="checkbox" checked>
               <h1 class="mdl-mega-footer--heading">Features</h1>
@@ -466,17 +468,18 @@
               </ul>
             </div>
           </div>
+          -->
           <div class="mdl-mega-footer--bottom-section">
             <div class="mdl-logo">
               More Information
             </div>
             <ul class="mdl-mega-footer--link-list">
-              <li><a href="https://developers.google.com/web/starter-kit/">Web Starter Kit</a></li>
+              <li><a href="">YU Televentures</a></li>
               <li><a href="#">Help</a></li>
               <li><a href="#">Privacy and Terms</a></li>
             </ul>
           </div>
-        </footer>
+        </footer><!-- Footer -->
       </main>
     </div>
     <script src="assets/js/material.min.js"></script>
