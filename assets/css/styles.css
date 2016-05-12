@@ -258,3 +258,6 @@ html, body {
   display: inline-block;
   text-align: center;
 }
+.device-table tr th {
+  text-align: center;
+}

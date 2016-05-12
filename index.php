@@ -202,6 +202,228 @@
           </section>
         </div><!-- Projects -->
 
+        <!-- Downloads -->
+        <div class="mdl-layout__tab-panel" id="downloads">
+          <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+            <div class="mdl-card mdl-cell mdl-cell--12-col">
+              <div class="mdl-card__supporting-text">
+                  <div class="mdl-tabs mdl-js-tabs">
+                    <div class="mdl-tabs__tab-bar">
+                       <a href="#yureka-panel" class="mdl-tabs__tab is-active">Yureka</a>
+                       <a href="#yuphoria-panel" class="mdl-tabs__tab">Yuphoria</a>
+                       <a href="#yunique-panel" class="mdl-tabs__tab">Yunique</a>
+                       <a href="#yutopia-panel" class="mdl-tabs__tab">Yutopia</a>
+                    </div>
+                    <div class="mdl-tabs__panel is-active" id="yureka-panel">
+                       <p>Yureka Contents</p>
+                       <table class="device-table mdl-data-table mdl-js-data-table mdl-shadow--2dp">
+                          <thead>
+                            <tr>
+                              <th>Date/Time</th>
+                              <th>Title</th>
+                              <th>MD5sum</th>
+                              <th>Download</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>12-12-12-16 10:55 AM</td>
+                              <td>Yureka_YU-OPEN-OS_&lt;revnumber&gt;</td>
+                              <td>qwerty423hdjskabkd72en%@r#CgEwsop</td>
+                              <td><a href="#">Download</a></td>
+                            </tr>
+                            <tr>
+                              <td>12-12-12-16 10:55 AM</td>
+                              <td>Yureka_YU-OPEN-OS_&lt;revnumber&gt;</td>
+                              <td>qwerty423hdjskabkd72en%@r#CgEwsop</td>
+                              <td><a href="#">Download</a></td>
+                            </tr>
+                            <tr>
+                              <td>12-12-12-16 10:55 AM</td>
+                              <td>Yureka_YU-OPEN-OS_&lt;revnumber&gt;</td>
+                              <td>qwerty423hdjskabkd72en%@r#CgEwsop</td>
+                              <td><a href="#">Download</a></td>
+                            </tr>
+                            <tr>
+                              <td>12-12-12-16 10:55 AM</td>
+                              <td>Yureka_YU-OPEN-OS_&lt;revnumber&gt;</td>
+                              <td>qwerty423hdjskabkd72en%@r#CgEwsop</td>
+                              <td><a href="#">Download</a></td>
+                            </tr>
+                            <tr>
+                              <td>12-12-12-16 10:55 AM</td>
+                              <td>Yureka_YU-OPEN-OS_&lt;revnumber&gt;</td>
+                              <td>qwerty423hdjskabkd72en%@r#CgEwsop</td>
+                              <td><a href="#">Download</a></td>
+                            </tr>
+                            <tr>
+                              <td>12-12-12-16 10:55 AM</td>
+                              <td>Yureka_YU-OPEN-OS_&lt;revnumber&gt;</td>
+                              <td>qwerty423hdjskabkd72en%@r#CgEwsop</td>
+                              <td><a href="#">Download</a></td>
+                            </tr>
+                          </tbody>
+                        </table>
+                    </div>
+                    <div class="mdl-tabs__panel" id="yuphoria-panel">
+                       <p>Yuphoria Contents</p>
+                       <table class="device-table mdl-data-table mdl-js-data-table mdl-shadow--2dp">
+                          <thead>
+                            <tr>
+                              <th>Date/Time</th>
+                              <th>Title</th>
+                              <th>MD5sum</th>
+                              <th>Download</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>12-12-12-16 10:55 AM</td>
+                              <td>Yuphoria_YU-OPEN-OS_&lt;revnumber&gt;</td>
+                              <td>qwerty423hdjskabkd72en%@r#CgEwsop</td>
+                              <td><a href="#">Download</a></td>
+                            </tr>
+                            <tr>
+                              <td>12-12-12-16 10:55 AM</td>
+                              <td>Yuphoria_YU-OPEN-OS_&lt;revnumber&gt;</td>
+                              <td>qwerty423hdjskabkd72en%@r#CgEwsop</td>
+                              <td><a href="#">Download</a></td>
+                            </tr>
+                            <tr>
+                              <td>12-12-12-16 10:55 AM</td>
+                              <td>Yuphoria_YU-OPEN-OS_&lt;revnumber&gt;</td>
+                              <td>qwerty423hdjskabkd72en%@r#CgEwsop</td>
+                              <td><a href="#">Download</a></td>
+                            </tr>
+                            <tr>
+                              <td>12-12-12-16 10:55 AM</td>
+                              <td>Yuphoria_YU-OPEN-OS_&lt;revnumber&gt;</td>
+                              <td>qwerty423hdjskabkd72en%@r#CgEwsop</td>
+                              <td><a href="#">Download</a></td>
+                            </tr>
+                            <tr>
+                              <td>12-12-12-16 10:55 AM</td>
+                              <td>Yuphoria_YU-OPEN-OS_&lt;revnumber&gt;</td>
+                              <td>qwerty423hdjskabkd72en%@r#CgEwsop</td>
+                              <td><a href="#">Download</a></td>
+                            </tr>
+                            <tr>
+                              <td>12-12-12-16 10:55 AM</td>
+                              <td>Yuphoria_YU-OPEN-OS_&lt;revnumber&gt;</td>
+                              <td>qwerty423hdjskabkd72en%@r#CgEwsop</td>
+                              <td><a href="#">Download</a></td>
+                            </tr>
+                          </tbody>
+                        </table>
+                    </div>
+                    <div class="mdl-tabs__panel" id="yunique-panel">
+                       <p>Yunique Contents</p>
+                       <table class="device-table mdl-data-table mdl-js-data-table mdl-shadow--2dp">
+                          <thead>
+                            <tr>
+                              <th>Date/Time</th>
+                              <th>Title</th>
+                              <th>MD5sum</th>
+                              <th>Download</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>12-12-12-16 10:55 AM</td>
+                              <td>Yunique_YU-OPEN-OS_&lt;revnumber&gt;</td>
+                              <td>qwerty423hdjskabkd72en%@r#CgEwsop</td>
+                              <td><a href="#">Download</a></td>
+                            </tr>
+                            <tr>
+                              <td>12-12-12-16 10:55 AM</td>
+                              <td>Yunique_YU-OPEN-OS_&lt;revnumber&gt;</td>
+                              <td>qwerty423hdjskabkd72en%@r#CgEwsop</td>
+                              <td><a href="#">Download</a></td>
+                            </tr>
+                            <tr>
+                              <td>12-12-12-16 10:55 AM</td>
+                              <td>Yunique_YU-OPEN-OS_&lt;revnumber&gt;</td>
+                              <td>qwerty423hdjskabkd72en%@r#CgEwsop</td>
+                              <td><a href="#">Download</a></td>
+                            </tr>
+                            <tr>
+                              <td>12-12-12-16 10:55 AM</td>
+                              <td>Yunique_YU-OPEN-OS_&lt;revnumber&gt;</td>
+                              <td>qwerty423hdjskabkd72en%@r#CgEwsop</td>
+                              <td><a href="#">Download</a></td>
+                            </tr>
+                            <tr>
+                              <td>12-12-12-16 10:55 AM</td>
+                              <td>Yunique_YU-OPEN-OS_&lt;revnumber&gt;</td>
+                              <td>qwerty423hdjskabkd72en%@r#CgEwsop</td>
+                              <td><a href="#">Download</a></td>
+                            </tr>
+                            <tr>
+                              <td>12-12-12-16 10:55 AM</td>
+                              <td>Yunique_YU-OPEN-OS_&lt;revnumber&gt;</td>
+                              <td>qwerty423hdjskabkd72en%@r#CgEwsop</td>
+                              <td><a href="#">Download</a></td>
+                            </tr>
+                          </tbody>
+                        </table>
+                    </div>
+                    <div class="mdl-tabs__panel" id="yutopia-panel">
+                       <p>Yutopia Contents</p>
+                       <table class="device-table mdl-data-table mdl-js-data-table mdl-shadow--2dp">
+                          <thead>
+                            <tr>
+                              <th>Date/Time</th>
+                              <th>Title</th>
+                              <th>MD5sum</th>
+                              <th>Download</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>12-12-12-16 10:55 AM</td>
+                              <td>Yutopia_YU-OPEN-OS_&lt;revnumber&gt;</td>
+                              <td>qwerty423hdjskabkd72en%@r#CgEwsop</td>
+                              <td><a href="#">Download</a></td>
+                            </tr>
+                            <tr>
+                              <td>12-12-12-16 10:55 AM</td>
+                              <td>Yutopia_YU-OPEN-OS_&lt;revnumber&gt;</td>
+                              <td>qwerty423hdjskabkd72en%@r#CgEwsop</td>
+                              <td><a href="#">Download</a></td>
+                            </tr>
+                            <tr>
+                              <td>12-12-12-16 10:55 AM</td>
+                              <td>Yutopia_YU-OPEN-OS_&lt;revnumber&gt;</td>
+                              <td>qwerty423hdjskabkd72en%@r#CgEwsop</td>
+                              <td><a href="#">Download</a></td>
+                            </tr>
+                            <tr>
+                              <td>12-12-12-16 10:55 AM</td>
+                              <td>Yutopia_YU-OPEN-OS_&lt;revnumber&gt;</td>
+                              <td>qwerty423hdjskabkd72en%@r#CgEwsop</td>
+                              <td><a href="#">Download</a></td>
+                            </tr>
+                            <tr>
+                              <td>12-12-12-16 10:55 AM</td>
+                              <td>Yutopia_YU-OPEN-OS_&lt;revnumber&gt;</td>
+                              <td>qwerty423hdjskabkd72en%@r#CgEwsop</td>
+                              <td><a href="#">Download</a></td>
+                            </tr>
+                            <tr>
+                              <td>12-12-12-16 10:55 AM</td>
+                              <td>Yutopia_YU-OPEN-OS_&lt;revnumber&gt;</td>
+                              <td>qwerty423hdjskabkd72en%@r#CgEwsop</td>
+                              <td><a href="#">Download</a></td>
+                            </tr>
+                          </tbody>
+                        </table>
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </section>
+        </div><!-- Downloads -->
+
         <footer class="mdl-mega-footer">
           <div class="mdl-mega-footer--middle-section">
             <div class="mdl-mega-footer--drop-down-section">
