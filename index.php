@@ -69,16 +69,16 @@
     }
     </style>
     <!-- Google Analytics code -->
-    <?php include_once("includes/analyticstracking.php") ?>
+    <?php //include_once("includes/analyticstracking.php") ?>
   </head>
   <?php
-    include_once 'helpers/db_functions.php';
-    $db = new DB_Functions();
-    $users = $db->getAllPhoneDate();
-    if ($users != false)
-        $no_of_users = mysql_num_rows($users);
-    else
-        $no_of_users = 0;
+    // include_once 'helpers/db_functions.php';
+    // $db = new DB_Functions();
+    // $users = $db->getAllPhoneDate();
+    // if ($users != false)
+    //     $no_of_users = mysql_num_rows($users);
+    // else
+    //     $no_of_users = 0;
   ?>
   <body class="mdl-demo mdl-color--grey-100 mdl-color-text--grey-700 mdl-base">
     <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
