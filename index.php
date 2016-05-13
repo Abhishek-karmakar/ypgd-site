@@ -93,27 +93,28 @@
           <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
             <div class="mdl-card mdl-cell mdl-cell--12-col">
               <div class="mdl-card__supporting-text">
-                <h4>OS Project Overview</h4>
+                <h4>Project highway - (SC)2MS</h4>
                 <p>
-                  <b>Channelize developer efforts -</b>
-                  100s of ROMs and Kernels have been created in isolation we want to channelize their development efforts under one umbrella and help the community build this OS
+                  We have open-sourced entire OS for YUREKA/YUREKA PLUS, YUPHORIA and YUNIQUE. Inviting developers to participate in (SC)2MS program and submit contributions to this YU-OPEN-OS. 
                 </p>
                 <p>
-                  <b>Open Source</b> - 
-                  Its an Open Source Project with Android/ Cyanogenmod base, anyone can download it and build it!
+                  <strong>Source:</strong>
+                  All the source that you need to build for the YU devices you find here. With the build instructions. 
                 </p>
                 <p>
-                  <b>Community Based</b> - 
-                  Everybody can participate and work with top developers from all over the world who are already actively participating in our YU community.
+                  <strong>Code review:</strong>
+                  Learn what you need to do and how can you submit the patches to the sources. 
                 </p>
                 <p>
-                  <b>Developers connect more deeply with our OS</b> - 
-                  We invite developers to participate on YU forums and help us build this OS together
+                  <strong>Projects:</strong>
+                  Explains how you can report bugs, and request for new features on <a class="projects" href="#">Projects</a>
                 </p>
                 <p>
-                  <b>After-Market Firmware</b> - 
-                  The device will not come preloaded with this OS but willing users can download it from our developer portal (when it becomes available) and install/flash it on their phones. Eventually we can move it in the direction of an official OS release.
+                  <strong>Downloads:</strong> 
+                  This section let you download our freshly baked software for your devices. Also the flashing steps are present there. Use it wisely. 
                 </p>
+                <br>
+                <p class="text-center bold">Alright, Let's Begin !!</p>
               </div>
             </div>
           </section>
@@ -124,20 +125,36 @@
           <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
             <div class="mdl-card mdl-cell mdl-cell--12-col">
               <div class="mdl-card__supporting-text">
-                <h4>Source Code</h4>
+                <h4>Source</h4>
                 <p>
-                  We have open-sourced the entire build tree and kernel sources of the YU Community ROM!
+                  We have open-sourced the entire build tree and kernel sources of the YU-OPEN-OS!
                 </p>
 
-                <p class="headTitle2">GitHub</p>
                 <p>
-                  GitHub organization containing all sources: <a href="http://github.com/YUPlayGodDev">http://github.com/YUPlayGodDev</a>
+                  <strong>GitHub organization</strong> containing all sources:<br>
+                  <a href="https://github.com/YUTeleventures">
+                    <i class="fa fa-github fa-2x"></i>
+                  </a>
                 </p>
                 <p>
-                  <a href="http://github.com/YUPlayGodDev/android_device_yu_tomato">Device Tree for YUREKA/YUREKA PLUS</a>
+                  <strong>Build Instructions</strong><br>
+                  <strong>YUREKA/YUREKA PLUS/YUPHORIA:</strong><a href="https://github.com/YUTeleventures/platform_manifest/tree/yu-mm6.0.1-msm8916">https://github.com/YUTeleventures/platform_manifest/tree/yu-mm6.0.1-msm8916</a>
+
+                  <br>
+
+                  <strong>YUNIQUE:</strong><a href="https://github.com/YUTeleventures/platform_manifest/tree/yu-mm6.0.1-jalebi">https://github.com/YUTeleventures/platform_manifest/tree/yu-mm6.0.1-jalebi</a>
                 </p>
                 <p>
-                  <a href="http://github.com/YUPlayGodDev/android_device_yu_lettuce">Device Tree for YUPHORIA</a>
+                  <strong>Device trees</strong><br>
+                  <strong>YUREKA/YUREKA PLUS</strong>: <a href="https://github.com/YUTeleventures/device_yu_tomato">https://github.com/YUTeleventures/device_yu_tomato</a><br>
+                  <strong>YUPHORIA</strong>: <a href="https://github.com/YUTeleventures/device_yu_lettuce">https://github.com/YUTeleventures/device_yu_lettuce</a><br>
+                  <strong>YUNIQUE</strong>: <a href="https://github.com/YUTeleventures/device_yu_jalebi">https://github.com/YUTeleventures/device_yu_jalebi</a><br>
+                </p>
+                <p>
+                  <strong>Flashing Instructions:</strong> <a href="https://github.com/YUTeleventures/factory-image-flash-tools">https://github.com/YUTeleventures/factory-image-flash-tools</a>
+                </p>
+                <p>
+                  <strong>Contribute to YU-OPEN-OS:</strong> <a class="codereview" href="#">CODE REVIEW</a>
                 </p>
               </div>
             </div>
@@ -149,22 +166,204 @@
           <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
             <div class="mdl-card mdl-cell mdl-cell--12-col">
               <div class="mdl-card__supporting-text">
-                <h4>Code Review</h4>
+                <h4>Code review</h4>
 
-                <p>Description of the code review</p>
+                <p>
+                  Participate in and contribute to YU-OPEN-OS by submitting patches on Gerrit <a href="http://codereview.yuplaygod.com/">CodeReview</a>
+                </p>
 
-                <p>Advantages of the code review</p>
+                <p>Code review lets developers know what changes others are contributing.</p>
 
-                <p>How can people submit to code review</p>
-
-                <p>Our review process</p>
-
-                <div class="code-review-section">
-                  <a href="http://codereview.yuplaygod.com/">
-                    <i class="fa fa-chevron-circle-right fa-3x" aria-hidden="true"></i><br>
-                    Go to codereview
-                  </a>
+                <div class="codereview-process">
+                  <img src="assets/images/codereview_process.png" alt="">
                 </div>
+
+                <p>
+                  <strong>Submitting to Code review:</strong>
+                </p>
+
+                <div class="codereview-process">
+                  <img src="assets/images/codereview-dev_process.png" height="300" alt="">
+                </div>
+
+                <p>
+                  <span>After syncing sources from</span> <a href="https://github.com/YUTeleventures"><i class="fa fa-github fa-2x"></i></a> 
+                </p>
+
+                <ol>
+
+                  <li>Create local branch and submit changes:</li>
+                
+                  <table>
+                    <tr>
+                      <td>
+                        <strong>Example</strong>
+                      </td>
+                      <td>
+                        <ul class="no-bullets">
+                          <li><code>repo start &lt;new branch name&gt; --all | &lt;project&gt;</code></li>
+                          <li><code>repo checkout &lt;new branch name&gt; [&lt;project&gt;...]</code></li>
+                          <li><code>repo start yu-mm6.0.1 --all</code></li>
+                          <li><code>repo checkout yu-mm6.0.1</code></li>
+                        </ul>
+                      </td>
+                    </tr>
+                  </table>
+
+                  <li>To verify:</li>
+
+                  <table>
+                    <tr>
+                      <td>
+                        <strong>Example</strong>
+                      </td>
+                      <td>
+                        <ul class="no-bullets">
+                          <li><code>repo branch [&lt;project&gt;...] &amp; repo status [&lt;project&gt;...]</code></li>
+                          <li><code>repo branch &amp; repo status</code></li>
+                        </ul>
+                      </td>
+                    </tr>
+                  </table>
+
+                  <li>Add and commit changes:</li>
+
+                  <table>
+                    <tr>
+                      <td>
+                        <strong>Example</strong>
+                      </td>
+                      <td>
+                        <ul class="no-bullets">
+                          <li><code>rcd [&lt;project&gt;...]</code></li>
+                          <li><code>edit &lt;files&gt;</code></li>
+                          <li><code>git add &lt;files&gt;</code></li>
+                          <li><code>git commit &lt;files&gt;</code></li>
+                          <li><code>cd &lt;root&gt;</code></li>
+                          <li><code>repo upload &lt;project&gt;</code></li>
+                          <li><code>git add .</code></li>
+                          <li><code>git commit -m “Bug21 Fix issue”</code></li>
+                          <li><code>repo upload YUTeleventures/android_frameworks_base</code></li>
+                        </ul>
+                      </td>
+                    </tr>
+                  </table>
+
+                </ol>
+
+                <div>
+                  <p>
+                    <strong>Alternate way of submitting to Code review:</strong>
+                  </p>
+
+                  <p>
+                    <span>After syncing sources from</span> <a href="https://github.com/YUTeleventures"><i class="fa fa-github fa-2x"></i></a> 
+                  </p>
+
+                  <ol>
+                    
+                    <li>
+                      Add hooks for adding commit messages in git folder
+                      <br>
+                      scp -p -P 29418 &lt;Username&gt;@codereview.yuplaygod.com:hooks/commit-msg .git/hooks/ 
+
+                      <table>
+                          <tr>
+                            <td><strong>Example</strong></td>
+                            <td>
+                              <ul class="no-bullets">
+                                <li><code>scp -p -P 29418 ShradhaV@codereview.yuplaygod.com:hooks/commit-msg .git/hooks/</code></li>
+                              </ul>
+                            </td>
+                          </tr>
+                      </table>
+                    </li>
+                    
+                    <li>
+                      Add files and commit changes
+                      <br>
+                      git add &lt;files&gt;<br>
+                      git commit -m "Commit Message"
+
+                      <table>
+                        <tr>
+                          <td><strong>Example</strong></td>
+                          <td>
+                            <ul class="no-bullets">
+                              <li><code>git add .</code></li>
+                              <li><code>git commit -m “Bug21 Fix issue”</code></li>
+                            </ul>
+                          </td>
+                        </tr>
+                      </table>
+                    </li>
+
+                    <li>
+                      Create remote &lt;URL&gt; for review using any one of below
+                      <br>
+                      ssh://&lt;Username&gt;@codereview.yuplaygod.com:29418/YUTeleventures/[Repository Name]
+                      <br>
+                      OR
+                      <br>
+                      http://&lt;Username&gt;@codereview.yuplaygod.com/YUTeleventures/[Repository Name]
+                    </li>
+
+                    <li>
+                      Add Code review remote
+                      <br>
+                      git remote add review &lt;URL&gt;<br>
+
+                      <table>
+                        <tr>
+                          <td><strong>Example</strong></td>
+                          <td>
+                            <ul class="no-bullets">
+                              <li><code>git remote add review</code></li>
+                              <li><code>ssh://ShradhaV@codereview.yuplaygod.com:29418/YUTeleventures/android_frameworks_base</code></li>
+                            </ul>
+                          </td>
+                        </tr>
+                      </table>
+                    </li>
+
+                    <li>
+                       Push changes
+                      <br>
+                      git push review HEAD:refs/for/&lt;branch&gt;
+
+                      <table>
+                        <tr>
+                          <td><strong>Example</strong></td>
+                          <td>
+                            <ul class="no-bullets">
+                              <li><code>git push review HEAD:refs/for/yu-mm6.0.1</code></li>
+                            </ul>
+                          </td>
+                        </tr>
+                      </table>
+                    </li>
+
+                  </ol>
+                </div>
+
+                <div>
+                  <p><strong>YU Code Review Process</strong></p>
+                  <i>Internal developer</i>does code review and gives +/-1
+                  <ol class="alpha-list">
+                    <li>+1 would allow the tester to verify the code</li>
+                    <li>-1 would mean that the developer has to re-work on the code submitted</li>
+                  </ol>
+                  <i>Testing</i>
+                  <ol class="alpha-list">
+                    <li>A tester to download the revision build and test the functionality of the code submitted</li>
+                    <li>+/-1 to inform whether the code is tested and if it can be merged or rejected</li>
+                  </ol>
+                  <i>Final Reviewer</i>
+                  <ol class="alpha-list">
+                    <li>On all the +1’s the Final reviewer would recheck the code and decide whether to merge the code or not</li>
+                  </ol>
+                </div>
+                
               </div>
             </div>
           </section>
@@ -177,26 +376,121 @@
               <div class="mdl-card__supporting-text">
                 <h4>Projects</h4>
 
-                <p>Short description of Project Management Tool</p>
+                <p>YU-OPEN-OS projects and bugs are tracked on <a href="http://projects.yuplaygod.com/">http://projects.yuplaygod.com</a></p>
 
-                <p><span>Issues:</span></p>
-                <ul class="no-bullets">
-                  <li>How can contributors report on an issue?</li>
-                  <li>What must a contributor check before submitting an issue?</li>
-                  <li>How does issue and code review?</li>
-                </ul>
+                <img src="assets/images/project_flow.png" alt="">
+                <br><br><br>
 
-                <p><span>Activity:</span></p>
-                <ul class="no-bullets">
-                  <li>Description of the activity Tab</li>
-                </ul>
+                <div>
+                  <p>
+                    <strong>Reporting an issue</strong>
+                  </p>
 
-                <div class="code-review-section">
-                  <a href="http://codereview.yuplaygod.com/">
-                    <i class="fa fa-chevron-circle-right fa-3x" aria-hidden="true"></i><br>
-                    Go to codereview
-                  </a>
+                  <ol>
+                    <li><a href="http://projects.yuplaygod.com/account/register">Register</a> yourself and <a href="http://projects.yuplaygod.com/login">Sign In</a></li>
+                    <li>Select respective <a href="http://projects.yuplaygod.com/projects">project</a></li>
+                    <li>Users are requested to search the issues before creating a new issue to avoid duplicity.</li>
+                    <li>Add issues from New Issue tab.  Users are requested to provide complete steps to reproduce the issue and provide screen shots, logcat, SW Version etc. if possible and fill out all the fields mentioned in new Issue list.</li>
+                  </ol>
                 </div>
+
+                <div>
+                  <p>
+                    <strong>Creating new feature or improvement request</strong>
+                  </p>
+                  <p>Users can also create a new feature request or an Improvement request, by filling the form with all required fields with detail description. </p>
+                </div>
+
+                <div>
+                  <p>
+                    <strong>Fixing an issue</strong>
+                  </p>
+                  <ol>
+                    <li>
+                      After initial analysis, issue will be available to the developers for providing solutions. Community Manager will assign the issue to developer (either internal team developer or a community developer). A mail will be sent to them automatically after assignment.
+                    </li>
+                    <li>
+                      As soon as develop start working on the issue , he/she should change the status to as in Progress.
+                    </li>
+                    <li>
+                      Once issue is fixed by developer, solution should be committed to <a href="http://codereview.yuplaygod.com/">Gerrit code review</a>. It is must for developer to mention the issues/feature/improvement id. E.g Bug#5, Feature #35.
+                    </li>
+                  </ol>
+                </div>
+
+                <div>
+                  <p>
+                    <strong>Flashing Instructions</strong>
+                    <ol>
+                      <li>Flash images with Fastboot</li>
+                      <ol class="u-alpha-list">
+                        <li>Execute below commands in terminal</li>
+                        <li>
+                          Connect device in fastboot mode<br>
+                          <code>adb reboot bootloader</code>
+                        </li>
+                        <li>
+                          Check if device is detecting in fastboot mode<br>
+                          <code>fastboot -i 0x1ebf devices </code>
+                        </li>
+                        <li>
+                          Unlock bootloader
+                          <code>fastboot -i 0x1ebf oem unlock</code>
+                        </li>
+                        <li>
+                          Format User data<br>
+                          <code>fastboot -i 0x1ebf format userdata</code>
+                        </li>
+                        <li>
+                          Flash kernel<br>
+                          <code>astboot -i 0x1ebf flash boot boot.img</code>
+                        </li>
+                        <li>
+                          Flash recovery<br>
+                          <code>fastboot -i 0x1ebf flash recovery recovery.img</code>
+                        </li>
+                        <li>
+                          Flash system partition<br>
+                          <code>fastboot -i 0x1ebf flash system system.img</code>
+                        </li>
+                        <li>
+                          Flash data partition<br>
+                          <code>fastboot -i 0x1ebf flash userdata userdata.img</code>
+                        </li>
+                        <li>
+                          Relock bootloader<br>
+                          <code>fastboot -i 0x1ebf oem lock</code>
+                        </li>
+                        <li>
+                          Reboot device<br>
+                          <code>fastboot -i 0x1ebf reboot</code>
+                        </li>
+                      </ol>
+
+                      <li>
+                        <strong>Flashing zip file with ADB sideload</strong>
+                        <ol class="u-alpha-list">
+                          <li>
+                            Connect device in recovery mode by executing below command in terminal<br>
+                            <code>adb reboot recovery</code>
+                          </li>
+                          <li>
+                            Select Apply Update from ADB
+                          </li>
+                          <li>
+                            Check if device is detecting in sideload<br>
+                            <code>adb devices</code>
+                          </li>
+                          <li>
+                            Sideload YU-OPEN-OS<br>
+                            <code>adb sideload path_to_zipfile</code>
+                          </li>
+                        </ol>
+                      </li>
+                    </ol>
+                  </p>                  
+                </div>
+
               </div>              
             </div>
           </section>

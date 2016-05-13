@@ -261,9 +261,22 @@ html, body {
 .device-table {
   width: 100%;
 }
-.device-table tr th {
+.device-table tr th, .text-center {
   text-align: center;
 }
 .mdl-demo section.section--center {
   max-width: 1080px;
+}
+.bold {
+  font-weight: bolder;
+}
+.codereview-process {
+  padding: 0;
+  margin-bottom: 80px;
+}
+.alpha-list {
+  list-style-type: lower-alpha;
+}
+.u-alpha-list {
+  list-style-type: upper-alpha;
 }
