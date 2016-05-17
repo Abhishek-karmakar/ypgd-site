@@ -96,6 +96,7 @@
           <a href="#codereview" class="mdl-layout__tab">Code review</a>
           <a href="#projects" class="mdl-layout__tab">Projects</a>
           <a href="#downloads" class="mdl-layout__tab">Downloads</a>
+          <a href="#build" class="mdl-layout__tab forums">Build</a>
           <a href="#forums" class="mdl-layout__tab forums">Forums</a>
         </div>
       </header>
