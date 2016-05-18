@@ -96,7 +96,7 @@
           <a href="#codereview" class="mdl-layout__tab">Code review</a>
           <a href="#projects" class="mdl-layout__tab">Projects</a>
           <a href="#downloads" class="mdl-layout__tab">Downloads</a>
-          <a href="#build" class="mdl-layout__tab forums">Build</a>
+          <a href="#build" class="mdl-layout__tab build">Build</a>
           <a href="#forums" class="mdl-layout__tab forums">Forums</a>
         </div>
       </header>
@@ -565,9 +565,9 @@
                         </table>
                     </div>
                     <div class="mdl-tabs__panel" id="yunique-panel">
-                       <p>Comming Soon</p>
+                       <p>Yunique Contents</p>
                        <table class="device-table mdl-data-table mdl-js-data-table mdl-shadow--2dp">
-                          <!-- <thead>
+                          <thead>
                             <tr>
                               <th>Date/Time</th>
                               <th>Title</th>
@@ -577,6 +577,9 @@
                           </thead>
                           <tbody>
                             <tr>
+                              <td colspan="2"><h3>Coming Soon</h3></td>
+                            </tr>
+                            <!-- <tr>
                               <td>12-12-12-16 10:55 AM</td>
                               <td>Yunique_YU-OPEN-OS_&lt;revnumber&gt;</td>
                               <td>qwerty423hdjskabkd72en%@r#CgEwsop</td>
@@ -605,20 +608,14 @@
                               <td>Yunique_YU-OPEN-OS_&lt;revnumber&gt;</td>
                               <td>qwerty423hdjskabkd72en%@r#CgEwsop</td>
                               <td><a href="#">Download</a></td>
-                            </tr>
-                            <tr>
-                              <td>12-12-12-16 10:55 AM</td>
-                              <td>Yunique_YU-OPEN-OS_&lt;revnumber&gt;</td>
-                              <td>qwerty423hdjskabkd72en%@r#CgEwsop</td>
-                              <td><a href="#">Download</a></td>
-                            </tr>
-                          </tbody> -->
+                            </tr> -->
+                          </tbody>
                         </table>
                     </div>
                     <div class="mdl-tabs__panel" id="yutopia-panel">
-                       <p>Comming Soon</p>
+                       <p>Yutopia Contents</p>
                        <table class="device-table mdl-data-table mdl-js-data-table mdl-shadow--2dp">
-                          <!-- <thead>
+                          <thead>
                             <tr>
                               <th>Date/Time</th>
                               <th>Title</th>
@@ -628,6 +625,9 @@
                           </thead>
                           <tbody>
                             <tr>
+                              <td colspan="2"><h3>Coming Soon</h3></td>
+                            </tr>
+                            <!-- <tr>
                               <td>12-12-12-16 10:55 AM</td>
                               <td>Yutopia_YU-OPEN-OS_&lt;revnumber&gt;</td>
                               <td>qwerty423hdjskabkd72en%@r#CgEwsop</td>
@@ -656,14 +656,8 @@
                               <td>Yutopia_YU-OPEN-OS_&lt;revnumber&gt;</td>
                               <td>qwerty423hdjskabkd72en%@r#CgEwsop</td>
                               <td><a href="#">Download</a></td>
-                            </tr>
-                            <tr>
-                              <td>12-12-12-16 10:55 AM</td>
-                              <td>Yutopia_YU-OPEN-OS_&lt;revnumber&gt;</td>
-                              <td>qwerty423hdjskabkd72en%@r#CgEwsop</td>
-                              <td><a href="#">Download</a></td>
-                            </tr>
-                          </tbody> -->
+                            </tr> -->
+                          </tbody>
                         </table>
                     </div>
                   </div>
