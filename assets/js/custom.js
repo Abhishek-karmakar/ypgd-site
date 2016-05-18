@@ -1,10 +1,10 @@
 $(document).ready(function() {
 	$('.forums').on('click', function() {
-		window.location.href = "http://forums.yuplaygod.com/";
+                window.open("http://forums.yuplaygod.com/");
 	});
 
         $(".build").on('click', function() {
-                window.location.href = "http://build.yuplaygod.com/jenkins/";     
+                window.open("http://build.yuplaygod.com/jenkins/");     
         });
 
 	$(".projects").on('click', function() {
