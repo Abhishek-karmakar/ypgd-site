@@ -86,7 +86,7 @@
         <div class="mdl-layout--large-screen-only mdl-layout__header-row">
         </div>
         <div class="mdl-layout--large-screen-only mdl-layout__header-row">
-          <h3>YU Play Dev</h3>
+          <h1 class="element"></h1>
         </div>
         <div class="mdl-layout--large-screen-only mdl-layout__header-row">
         </div>
@@ -529,46 +529,16 @@
                             <tr>
                               <th>Date/Time</th>
                               <th>Title</th>
-                              <th>MD5sum</th>
+                              <th>SHA1</th>
                               <th>Download</th>
                             </tr>
                           </thead>
                           <tbody>
                             <tr>
-                              <td>12-12-12-16 10:55 AM</td>
-                              <td>Yureka_YU-OPEN-OS_&lt;revnumber&gt;</td>
-                              <td>qwerty423hdjskabkd72en%@r#CgEwsop</td>
-                              <td><a href="#">Download</a></td>
-                            </tr>
-                            <tr>
-                              <td>12-12-12-16 10:55 AM</td>
-                              <td>Yureka_YU-OPEN-OS_&lt;revnumber&gt;</td>
-                              <td>qwerty423hdjskabkd72en%@r#CgEwsop</td>
-                              <td><a href="#">Download</a></td>
-                            </tr>
-                            <tr>
-                              <td>12-12-12-16 10:55 AM</td>
-                              <td>Yureka_YU-OPEN-OS_&lt;revnumber&gt;</td>
-                              <td>qwerty423hdjskabkd72en%@r#CgEwsop</td>
-                              <td><a href="#">Download</a></td>
-                            </tr>
-                            <tr>
-                              <td>12-12-12-16 10:55 AM</td>
-                              <td>Yureka_YU-OPEN-OS_&lt;revnumber&gt;</td>
-                              <td>qwerty423hdjskabkd72en%@r#CgEwsop</td>
-                              <td><a href="#">Download</a></td>
-                            </tr>
-                            <tr>
-                              <td>12-12-12-16 10:55 AM</td>
-                              <td>Yureka_YU-OPEN-OS_&lt;revnumber&gt;</td>
-                              <td>qwerty423hdjskabkd72en%@r#CgEwsop</td>
-                              <td><a href="#">Download</a></td>
-                            </tr>
-                            <tr>
-                              <td>12-12-12-16 10:55 AM</td>
-                              <td>Yureka_YU-OPEN-OS_&lt;revnumber&gt;</td>
-                              <td>qwerty423hdjskabkd72en%@r#CgEwsop</td>
-                              <td><a href="#">Download</a></td>
+                              <td>May 18, 2016 4:30:00 PM</td>
+                              <td>yufastboot-images-tomato-160518.tar.gz</td>
+                              <td>c195f626292a078b5956d06a64d826982511af61</td>
+                              <td><a href="http://yuopenos.s3.amazonaws.com/OpenSource_nightly/yufastboot-images-tomato-160518.tar.gz">Download</a></td>
                             </tr>
                           </tbody>
                         </table>
@@ -580,54 +550,24 @@
                             <tr>
                               <th>Date/Time</th>
                               <th>Title</th>
-                              <th>MD5sum</th>
+                              <th>SHA1</th>
                               <th>Download</th>
                             </tr>
                           </thead>
                           <tbody>
                             <tr>
-                              <td>12-12-12-16 10:55 AM</td>
-                              <td>Yuphoria_YU-OPEN-OS_&lt;revnumber&gt;</td>
-                              <td>qwerty423hdjskabkd72en%@r#CgEwsop</td>
-                              <td><a href="#">Download</a></td>
-                            </tr>
-                            <tr>
-                              <td>12-12-12-16 10:55 AM</td>
-                              <td>Yuphoria_YU-OPEN-OS_&lt;revnumber&gt;</td>
-                              <td>qwerty423hdjskabkd72en%@r#CgEwsop</td>
-                              <td><a href="#">Download</a></td>
-                            </tr>
-                            <tr>
-                              <td>12-12-12-16 10:55 AM</td>
-                              <td>Yuphoria_YU-OPEN-OS_&lt;revnumber&gt;</td>
-                              <td>qwerty423hdjskabkd72en%@r#CgEwsop</td>
-                              <td><a href="#">Download</a></td>
-                            </tr>
-                            <tr>
-                              <td>12-12-12-16 10:55 AM</td>
-                              <td>Yuphoria_YU-OPEN-OS_&lt;revnumber&gt;</td>
-                              <td>qwerty423hdjskabkd72en%@r#CgEwsop</td>
-                              <td><a href="#">Download</a></td>
-                            </tr>
-                            <tr>
-                              <td>12-12-12-16 10:55 AM</td>
-                              <td>Yuphoria_YU-OPEN-OS_&lt;revnumber&gt;</td>
-                              <td>qwerty423hdjskabkd72en%@r#CgEwsop</td>
-                              <td><a href="#">Download</a></td>
-                            </tr>
-                            <tr>
-                              <td>12-12-12-16 10:55 AM</td>
-                              <td>Yuphoria_YU-OPEN-OS_&lt;revnumber&gt;</td>
-                              <td>qwerty423hdjskabkd72en%@r#CgEwsop</td>
-                              <td><a href="#">Download</a></td>
+                              <td>May 18, 2016 4:35:00 PM</td>
+                              <td>yufastboot-images-lettuce-160518.tar.gz</td>
+                              <td>14647deb1c6140d9098a9205a756f968437a085d</td>
+                              <td><a href="http://yuopenos.s3.amazonaws.com/OpenSource_nightly/yufastboot-images-lettuce-160518.tar.gz">Download</a></td>
                             </tr>
                           </tbody>
                         </table>
                     </div>
                     <div class="mdl-tabs__panel" id="yunique-panel">
-                       <p>Yunique Contents</p>
+                       <p>Comming Soon</p>
                        <table class="device-table mdl-data-table mdl-js-data-table mdl-shadow--2dp">
-                          <thead>
+                          <!-- <thead>
                             <tr>
                               <th>Date/Time</th>
                               <th>Title</th>
@@ -672,13 +612,13 @@
                               <td>qwerty423hdjskabkd72en%@r#CgEwsop</td>
                               <td><a href="#">Download</a></td>
                             </tr>
-                          </tbody>
+                          </tbody> -->
                         </table>
                     </div>
                     <div class="mdl-tabs__panel" id="yutopia-panel">
-                       <p>Yutopia Contents</p>
+                       <p>Comming Soon</p>
                        <table class="device-table mdl-data-table mdl-js-data-table mdl-shadow--2dp">
-                          <thead>
+                          <!-- <thead>
                             <tr>
                               <th>Date/Time</th>
                               <th>Title</th>
@@ -723,7 +663,7 @@
                               <td>qwerty423hdjskabkd72en%@r#CgEwsop</td>
                               <td><a href="#">Download</a></td>
                             </tr>
-                          </tbody>
+                          </tbody> -->
                         </table>
                     </div>
                   </div>
@@ -792,6 +732,7 @@
     </div>
     <script src="assets/js/material.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/1.1.1/typed.min.js"></script>
     <script src="assets/js/custom.js"></script>
   </body>
 </html>

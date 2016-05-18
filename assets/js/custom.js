@@ -31,3 +31,20 @@ $(document).ready(function() {
 
 
 });
+
+$(function(){
+        $(".element").typed({
+                strings: [
+                        "YU ^500Play ^500Dev", 
+                        "Project ^500Highway", 
+                        "An opensource platform ^500for sharing code for...",
+                        "Yuthopia^500",
+                        "Yureka/Yureka Plus^500",
+                        "Yuphoria^500",
+                        "And ^500Yunique"
+                ],
+                typeSpeed: 100,
+                backDelay: 500,
+                loop: true
+        });
+});
