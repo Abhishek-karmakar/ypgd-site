@@ -36,12 +36,12 @@ $(function(){
         $(".element").typed({
                 strings: [
                         "YU ^500Play ^500Dev", 
-                        "Project ^500Highway", 
-                        "An opensource platform ^500for sharing code for...",
-                        "Yuthopia^500",
-                        "Yureka/Yureka Plus^500",
-                        "Yuphoria^500",
-                        "And ^500Yunique"
+                        "git clone https://github.com/YUTeleventures/\&lt;repo\&gt;",
+                        "git add .", 
+                        "git commit -m 'You are the master of your own destiny'",
+                        "git push",
+                        "YU Open OS 6.0.1.",
+                        ":-)^1000"
                 ],
                 typeSpeed: 100,
                 backDelay: 500,
