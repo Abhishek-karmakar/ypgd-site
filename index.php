@@ -542,6 +542,82 @@
                             </tr>
                           </tbody>
                         </table>
+
+                        <!-- Flashing instructions for Tomato -->
+                        <div>
+                          <p>
+                            <strong>Flashing Instructions</strong>
+                            <ol>
+                              <li>Flash images with Fastboot</li>
+                              <ol class="u-alpha-list">
+                                <li>Execute below commands in terminal</li>
+                                <li>
+                                  Connect device in fastboot mode<br>
+                                  <code>adb reboot bootloader</code>
+                                </li>
+                                <li>
+                                  Check if device is detecting in fastboot mode<br>
+                                  <code>fastboot -i 0x1ebf devices </code>
+                                </li>
+                                <li>
+                                  Unlock bootloader
+                                  <code>fastboot -i 0x1ebf oem unlock</code>
+                                </li>
+                                <li>
+                                  Format User data<br>
+                                  <code>fastboot -i 0x1ebf format userdata</code>
+                                </li>
+                                <li>
+                                  Flash kernel<br>
+                                  <code>astboot -i 0x1ebf flash boot boot.img</code>
+                                </li>
+                                <li>
+                                  Flash recovery<br>
+                                  <code>fastboot -i 0x1ebf flash recovery recovery.img</code>
+                                </li>
+                                <li>
+                                  Flash system partition<br>
+                                  <code>fastboot -i 0x1ebf flash system system.img</code>
+                                </li>
+                                <li>
+                                  Flash data partition<br>
+                                  <code>fastboot -i 0x1ebf flash userdata userdata.img</code>
+                                </li>
+                                <li>
+                                  Relock bootloader<br>
+                                  <code>fastboot -i 0x1ebf oem lock</code>
+                                </li>
+                                <li>
+                                  Reboot device<br>
+                                  <code>fastboot -i 0x1ebf reboot</code>
+                                </li>
+                              </ol>
+
+                              <li>
+                                <strong>Flashing zip file with ADB sideload</strong>
+                                <ol class="u-alpha-list">
+                                  <li>
+                                    Connect device in recovery mode by executing below command in terminal<br>
+                                    <code>adb reboot recovery</code>
+                                  </li>
+                                  <li>
+                                    Select Apply Update from ADB
+                                  </li>
+                                  <li>
+                                    Check if device is detecting in sideload<br>
+                                    <code>adb devices</code>
+                                  </li>
+                                  <li>
+                                    Sideload YU-OPEN-OS<br>
+                                    <code>adb sideload path_to_zipfile</code>
+                                  </li>
+                                </ol>
+                              </li>
+                            </ol>
+                          </p>                  
+                        </div>
+                        <!-- Flashing instructions ends here -->
+
                     </div>
                     <div class="mdl-tabs__panel" id="yuphoria-panel">
                        <p>Yuphoria Contents</p>
@@ -563,6 +639,82 @@
                             </tr>
                           </tbody>
                         </table>
+
+                        <!-- Flashing instructions for Lettuce -->
+                        <div>
+                          <p>
+                            <strong>Flashing Instructions</strong>
+                            <ol>
+                              <li>Flash images with Fastboot</li>
+                              <ol class="u-alpha-list">
+                                <li>Execute below commands in terminal</li>
+                                <li>
+                                  Connect device in fastboot mode<br>
+                                  <code>adb reboot bootloader</code>
+                                </li>
+                                <li>
+                                  Check if device is detecting in fastboot mode<br>
+                                  <code>fastboot -i 0x2A96 devices </code>
+                                </li>
+                                <li>
+                                  Unlock bootloader
+                                  <code>fastboot -i 0x2A96 oem unlock</code>
+                                </li>
+                                <li>
+                                  Format User data<br>
+                                  <code>fastboot -i 0x2A96 format userdata</code>
+                                </li>
+                                <li>
+                                  Flash kernel<br>
+                                  <code>astboot -i 0x2A96 flash boot boot.img</code>
+                                </li>
+                                <li>
+                                  Flash recovery<br>
+                                  <code>fastboot -i 0x2A96 flash recovery recovery.img</code>
+                                </li>
+                                <li>
+                                  Flash system partition<br>
+                                  <code>fastboot -i 0x2A96 flash system system.img</code>
+                                </li>
+                                <li>
+                                  Flash data partition<br>
+                                  <code>fastboot -i 0x2A96 flash userdata userdata.img</code>
+                                </li>
+                                <li>
+                                  Relock bootloader<br>
+                                  <code>fastboot -i 0x2A96 oem lock</code>
+                                </li>
+                                <li>
+                                  Reboot device<br>
+                                  <code>fastboot -i 0x2A96 reboot</code>
+                                </li>
+                              </ol>
+
+                              <li>
+                                <strong>Flashing zip file with ADB sideload</strong>
+                                <ol class="u-alpha-list">
+                                  <li>
+                                    Connect device in recovery mode by executing below command in terminal<br>
+                                    <code>adb reboot recovery</code>
+                                  </li>
+                                  <li>
+                                    Select Apply Update from ADB
+                                  </li>
+                                  <li>
+                                    Check if device is detecting in sideload<br>
+                                    <code>adb devices</code>
+                                  </li>
+                                  <li>
+                                    Sideload YU-OPEN-OS<br>
+                                    <code>adb sideload path_to_zipfile</code>
+                                  </li>
+                                </ol>
+                              </li>
+                            </ol>
+                          </p>                  
+                        </div>
+                        <!-- Flashing instructions ends here -->
+
                     </div>
                     <div class="mdl-tabs__panel" id="yunique-panel">
                        <p>Yunique Contents</p>
