@@ -21,8 +21,8 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="">
-    <meta name="keywords" content="YU Play Dev, android dev, aosp, ROM, kernel, open os, yureka, yureka plus, yuthopia, yuphoria">
+    <meta name="description" content="Open source OS for YUREKA/YUREKA PLUS, YUPHORIA and YUNIQUE">
+    <meta name="keywords" content="YU Play Dev, android dev, aosp, ROM, kernel, open os, yureka, yureka plus, yuthopia, yuphoria, yunique">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>YU Play Dev</title>
 
