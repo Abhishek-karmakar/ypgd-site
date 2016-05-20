@@ -68,8 +68,8 @@
       z-index: 900;
     }
     </style>
-    <!-- Google Analytics code -->
-    <?php //include_once("includes/analyticstracking.php") ?>
+    <!-- Google Analytics -->
+    <?php include_once("helpers/analyticstracking.php") ?>
   </head>
   <?php
     // include_once 'helpers/db_functions.php';
