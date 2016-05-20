@@ -458,7 +458,7 @@
                         </li>
                         <li>
                           Flash kernel<br>
-                          <code>astboot -i 0x1ebf flash boot boot.img</code>
+                          <code>fastboot -i 0x1ebf flash boot boot.img</code>
                         </li>
                         <li>
                           Flash recovery<br>
