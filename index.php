@@ -1,3 +1,22 @@
+<?php
+
+require_once 'helpers/db_functions.php';
+
+$instance = new DB_Functions();
+
+$codenames = [
+    'jalebi',  // Yunique
+    'lettuce', // Yuphoria
+    'tomato'   // Yureka
+];
+
+$builds = []; // 0 - Yunique, 1 - Yuphoria, 2 - Yureka
+
+foreach ($codenames as $idx => $codename)
+    $builds[$idx] = $instance->getBuildData($codename);
+
+?>
+
 <!doctype html>
 <!--
   Material Design Lite
@@ -72,15 +91,6 @@
     <!-- Google Analytics -->
     <?php include_once("helpers/analyticstracking.php") ?>
   </head>
-  <?php
-    // include_once 'helpers/db_functions.php';
-    // $db = new DB_Functions();
-    // $users = $db->getAllPhoneDate();
-    // if ($users != false)
-    //     $no_of_users = mysql_num_rows($users);
-    // else
-    //     $no_of_users = 0;
-  ?>
   <body class="mdl-demo mdl-color--grey-100 mdl-color-text--grey-700 mdl-base">
     <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
       <header class="mdl-layout__header mdl-layout__header--scroll mdl-color--primary">
@@ -535,12 +545,18 @@
                             </tr>
                           </thead>
                           <tbody>
+                          <?php
+                            while ($b = $builds[2]->fetch_object()) {  
+                          ?>
                             <tr>
-                              <td>May 18, 2016 4:30:00 PM</td>
-                              <td>yufastboot-images-tomato-160518.tar.gz</td>
-                              <td>c195f626292a078b5956d06a64d826982511af61</td>
-                              <td><a href="http://yuopenos.s3.amazonaws.com/OpenSource_nightly/yufastboot-images-tomato-160518.tar.gz">Download</a></td>
+                              <td><?= date_format(date_create($b->time_added), 'M d, Y g:i:s A') ?></td>
+                              <td><?= $b->build_name ?></td>
+                              <td><?= $b->sha1 ?></td>
+                              <td><a href="<?= $b->build_path ?>">Download</a></td>
                             </tr>
+                          <?php
+                            }
+                          ?>
                           </tbody>
                         </table>
 
@@ -632,12 +648,18 @@
                             </tr>
                           </thead>
                           <tbody>
+                          <?php
+                            while ($b = $builds[1]->fetch_object()) {  
+                          ?>
                             <tr>
-                              <td>May 18, 2016 4:35:00 PM</td>
-                              <td>yufastboot-images-lettuce-160518.tar.gz</td>
-                              <td>14647deb1c6140d9098a9205a756f968437a085d</td>
-                              <td><a href="http://yuopenos.s3.amazonaws.com/OpenSource_nightly/yufastboot-images-lettuce-160518.tar.gz">Download</a></td>
+                              <td><?= date_format(date_create($b->time_added), 'M d, Y g:i:s A') ?></td>
+                              <td><?= $b->build_name ?></td>
+                              <td><?= $b->sha1 ?></td>
+                              <td><a href="<?= $b->build_path ?>">Download</a></td>
                             </tr>
+                          <?php
+                            }
+                          ?>
                           </tbody>
                         </table>
 
@@ -729,39 +751,18 @@
                             </tr>
                           </thead>
                           <tbody>
+                          <?php
+                            while ($b = $builds[0]->fetch_object()) {  
+                          ?>
                             <tr>
-                              <td colspan="2"><h3>Coming Soon</h3></td>
+                              <td><?= date_format(date_create($b->time_added), 'M d, Y g:i:s A') ?></td>
+                              <td><?= $b->build_name ?></td>
+                              <td><?= $b->sha1 ?></td>
+                              <td><a href="<?= $b->build_path ?>">Download</a></td>
                             </tr>
-                            <!-- <tr>
-                              <td>12-12-12-16 10:55 AM</td>
-                              <td>Yunique_YU-OPEN-OS_&lt;revnumber&gt;</td>
-                              <td>qwerty423hdjskabkd72en%@r#CgEwsop</td>
-                              <td><a href="#">Download</a></td>
-                            </tr>
-                            <tr>
-                              <td>12-12-12-16 10:55 AM</td>
-                              <td>Yunique_YU-OPEN-OS_&lt;revnumber&gt;</td>
-                              <td>qwerty423hdjskabkd72en%@r#CgEwsop</td>
-                              <td><a href="#">Download</a></td>
-                            </tr>
-                            <tr>
-                              <td>12-12-12-16 10:55 AM</td>
-                              <td>Yunique_YU-OPEN-OS_&lt;revnumber&gt;</td>
-                              <td>qwerty423hdjskabkd72en%@r#CgEwsop</td>
-                              <td><a href="#">Download</a></td>
-                            </tr>
-                            <tr>
-                              <td>12-12-12-16 10:55 AM</td>
-                              <td>Yunique_YU-OPEN-OS_&lt;revnumber&gt;</td>
-                              <td>qwerty423hdjskabkd72en%@r#CgEwsop</td>
-                              <td><a href="#">Download</a></td>
-                            </tr>
-                            <tr>
-                              <td>12-12-12-16 10:55 AM</td>
-                              <td>Yunique_YU-OPEN-OS_&lt;revnumber&gt;</td>
-                              <td>qwerty423hdjskabkd72en%@r#CgEwsop</td>
-                              <td><a href="#">Download</a></td>
-                            </tr> -->
+                          <?php
+                            }
+                          ?>
                           </tbody>
                         </table>
                     </div>

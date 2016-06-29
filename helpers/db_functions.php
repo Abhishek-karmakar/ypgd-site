@@ -3,6 +3,7 @@
 class DB_Functions {
 
     private $db;
+    private $con;
 
     //put your code here
     // constructor
@@ -10,7 +11,7 @@ class DB_Functions {
         include_once 'db_connect.php';
         // connecting to database
         $this->db = new DB_Connect();
-        $this->db->connect();
+        $this->con = $this->db->connect();
     }
 
     // destructor
@@ -22,7 +23,7 @@ class DB_Functions {
      * Gets Build Data by Device name
      */
     public function getBuildData($deviceName) {
-        return $this->con->query("SELECT * FROM build WHERE device='" . $deviceName . "' ORDER BY dt_added DESC");
+        return $this->con->query("SELECT * FROM build WHERE device='" . $deviceName . "' ORDER BY dt_added DESC LIMIT 3");
     }
 
 }
