@@ -2,13 +2,9 @@
 /**
  * Database config variables
  */
-define("DB_HOST", "localhost");
-define("DB_USER", "root");
-define("DB_PASSWORD", "rock007");
-define("DB_DATABASE", "yugerritdb");
+define("DB_HOST", "");
+define("DB_USER", "");
+define("DB_PASSWORD", "");
+define("DB_DATABASE", "");
 
-/*
- * Google API Key
- */
-define("GOOGLE_API_KEY", ""); // Place your Google API Key
 ?>
