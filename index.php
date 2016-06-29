@@ -552,11 +552,20 @@ foreach ($codenames as $idx => $codename)
                               <td><?= date_format(date_create($b->time_added), 'M d, Y g:i:s A') ?></td>
                               <td><?= $b->build_name ?></td>
                               <td><?= $b->sha1 ?></td>
-                              <td><a href="<?= $b->build_path ?>">Download</a></td>
+                              <td>
+                                <a class="js-build-path" href="#" data-val="<?= $b->id ?>" data-href="<?= $b->build_path ?>">
+                                  Download
+                                </a>
+                              </td>
                             </tr>
                           <?php
                             }
                           ?>
+                            <tr>
+                              <td class="other-builds" colspan="4">
+                                <h5><a href="http://download.yuplaygod.com/">Other Builds</a></h5>
+                              </td>
+                            </tr>
                           </tbody>
                         </table>
 
@@ -655,11 +664,20 @@ foreach ($codenames as $idx => $codename)
                               <td><?= date_format(date_create($b->time_added), 'M d, Y g:i:s A') ?></td>
                               <td><?= $b->build_name ?></td>
                               <td><?= $b->sha1 ?></td>
-                              <td><a href="<?= $b->build_path ?>">Download</a></td>
+                              <td>
+                                <a class="js-build-path" href="#" data-val="<?= $b->id ?>" data-href="<?= $b->build_path ?>">
+                                  Download
+                                </a>
+                              </td>
                             </tr>
                           <?php
                             }
                           ?>
+                            <tr>
+                              <td class="other-builds" colspan="4">
+                                <h5><a href="http://download.yuplaygod.com/">Other Builds</a></h5>
+                              </td>
+                            </tr>
                           </tbody>
                         </table>
 
@@ -758,11 +776,20 @@ foreach ($codenames as $idx => $codename)
                               <td><?= date_format(date_create($b->time_added), 'M d, Y g:i:s A') ?></td>
                               <td><?= $b->build_name ?></td>
                               <td><?= $b->sha1 ?></td>
-                              <td><a href="<?= $b->build_path ?>">Download</a></td>
+                              <td>
+                                <a class="js-build-path" href="#" data-val="<?= $b->id ?>" data-href="<?= $b->build_path ?>">
+                                  Download
+                                </a>
+                              </td>
                             </tr>
                           <?php
                             }
                           ?>
+                            <tr>
+                              <td class="other-builds" colspan="4">
+                                <h5><a href="http://download.yuplaygod.com/">Other Builds</a></h5>
+                              </td>
+                            </tr>
                           </tbody>
                         </table>
                     </div>
