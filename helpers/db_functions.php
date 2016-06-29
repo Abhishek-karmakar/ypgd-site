@@ -26,6 +26,13 @@ class DB_Functions {
         return $this->con->query("SELECT * FROM build WHERE device='" . $deviceName . "' ORDER BY dt_added DESC LIMIT 3");
     }
 
+    /**
+     * Update and Get number of Downloads
+     */
+    public function updateAndGetDownloads($id) {
+        $this->con->query("UPDATE build SET downloads = downloads + 1 WHERE ID = " . $id);
+        return $this->con->query("SELECT downloads FROM build WHERE ID=" . $id)->fetch_object()->downloads;
+    }
 }
 
 ?>
