@@ -29,7 +29,24 @@ $(document).ready(function() {
                 $('#codereview').addClass('is-active');
 	});
 
+        $('.js-build-path').click(function(e) {
+                e.preventDefault();
 
+                var id = $(this).attr('data-val');
+                var href = $(this).attr('data-href');
+                var object = $(this);
+
+                $.ajax({
+                        type: 'GET',
+                        url: 'helpers/update_downloads.php',
+                        data: 'id=' + id,
+                        dataType: 'text',
+                        success: function(data) {
+                                window.location.href = href;
+                                object.parent().parent().children('td').eq(5).html(data);
+                        }
+                });
+        });
 });
 
 $(function(){
