@@ -542,6 +542,7 @@ foreach ($codenames as $idx => $codename)
                               <th>Title</th>
                               <th>SHA1</th>
                               <th>Download</th>
+                              <th>Count</th>
                             </tr>
                           </thead>
                           <tbody>
@@ -557,12 +558,13 @@ foreach ($codenames as $idx => $codename)
                                   Download
                                 </a>
                               </td>
+                              <td><?= $b->downloads ?></td>
                             </tr>
                           <?php
                             }
                           ?>
                             <tr>
-                              <td class="other-builds" colspan="4">
+                              <td class="other-builds" colspan="5">
                                 <h5><a href="http://download.yuplaygod.com/">Other Builds</a></h5>
                               </td>
                             </tr>
@@ -654,6 +656,7 @@ foreach ($codenames as $idx => $codename)
                               <th>Title</th>
                               <th>SHA1</th>
                               <th>Download</th>
+                              <th>Count</th>
                             </tr>
                           </thead>
                           <tbody>
@@ -669,12 +672,13 @@ foreach ($codenames as $idx => $codename)
                                   Download
                                 </a>
                               </td>
+                              <td><?= $b->downloads ?></td>
                             </tr>
                           <?php
                             }
                           ?>
                             <tr>
-                              <td class="other-builds" colspan="4">
+                              <td class="other-builds" colspan="5">
                                 <h5><a href="http://download.yuplaygod.com/">Other Builds</a></h5>
                               </td>
                             </tr>
@@ -766,6 +770,7 @@ foreach ($codenames as $idx => $codename)
                               <th>Title</th>
                               <th>MD5sum</th>
                               <th>Download</th>
+                              <th>Count</th>
                             </tr>
                           </thead>
                           <tbody>
@@ -781,12 +786,13 @@ foreach ($codenames as $idx => $codename)
                                   Download
                                 </a>
                               </td>
+                              <td><?= $b->downloads ?></td>
                             </tr>
                           <?php
                             }
                           ?>
                             <tr>
-                              <td class="other-builds" colspan="4">
+                              <td class="other-builds" colspan="5">
                                 <h5><a href="http://download.yuplaygod.com/">Other Builds</a></h5>
                               </td>
                             </tr>
@@ -802,6 +808,7 @@ foreach ($codenames as $idx => $codename)
                               <th>Title</th>
                               <th>MD5sum</th>
                               <th>Download</th>
+                              <th>Count</th>
                             </tr>
                           </thead>
                           <tbody>
@@ -855,7 +862,7 @@ foreach ($codenames as $idx => $codename)
               <input class="mdl-mega-footer--heading-checkbox" type="checkbox" checked>
               <h1 class="mdl-mega-footer--heading">Features</h1>
               <ul class="mdl-mega-footer--link-list">
-                <li><a href="#">About</a></li>
+                <li><a href="#">About</x`a></li>
                 <li><a href="#">Terms</a></li>
                 <li><a href="#">Partners</a></li>
                 <li><a href="#">Updates</a></li>
