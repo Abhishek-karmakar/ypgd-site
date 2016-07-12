@@ -7,6 +7,10 @@ $(document).ready(function() {
                 window.open("http://build.yuplaygod.com/jenkins/");     
         });
 
+        $(".downloads").on('click', function() {
+                window.open("http://download.yuplaygod.com");     
+        });
+
 	$(".projects").on('click', function() {
 		// remove all is-active classes from tabs
                 $('a.mdl-layout__tab').removeClass('is-active');

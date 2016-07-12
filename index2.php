@@ -1,3 +1,22 @@
+<?php
+
+require_once 'helpers/db_functions.php';
+
+$instance = new DB_Functions();
+
+$codenames = [
+    'jalebi',  // Yunique
+    'lettuce', // Yuphoria
+    'tomato'   // Yureka
+];
+
+$builds = []; // 0 - Yunique, 1 - Yuphoria, 2 - Yureka
+
+foreach ($codenames as $idx => $codename)
+    $builds[$idx] = $instance->getBuildData($codename);
+
+?>
+
 <!doctype html>
 <!--
   Material Design Lite
@@ -55,8 +74,6 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
     <link rel="stylesheet" href="assets/css/material.min.css">
-    <!-- Compiled and minified CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">            
 
     <!-- Custom styles -->
     <link rel="stylesheet" href="assets/css/styles.css">
@@ -74,15 +91,6 @@
     <!-- Google Analytics -->
     <?php include_once("helpers/analyticstracking.php") ?>
   </head>
-  <?php
-    // include_once 'helpers/db_functions.php';
-    // $db = new DB_Functions();
-    // $users = $db->getAllPhoneDate();
-    // if ($users != false)
-    //     $no_of_users = mysql_num_rows($users);
-    // else
-    //     $no_of_users = 0;
-  ?>
   <body class="mdl-demo mdl-color--grey-100 mdl-color-text--grey-700 mdl-base">
     <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
       <header class="mdl-layout__header mdl-layout__header--scroll mdl-color--primary">
@@ -518,65 +526,329 @@
           <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
             <div class="mdl-card mdl-cell mdl-cell--12-col">
               <div class="mdl-card__supporting-text">
-                  
-                <ul class="collapsible" data-collapsible="accordion">
-                  <li>
-                    <div class="collapsible-header"><i class="material-icons">stay_current_landscape</i>Yureka/Yureka Plus</div>
-                    <div class="collapsible-body">
-                      <table class="device-table mdl-data-table mdl-js-data-table mdl-shadow--2dp">
+                  <div class="mdl-tabs mdl-js-tabs">
+                    <div class="mdl-tabs__tab-bar">
+                       <a href="#yureka-panel" class="mdl-tabs__tab is-active">Yureka</a>
+                       <a href="#yuphoria-panel" class="mdl-tabs__tab">Yuphoria</a>
+                       <a href="#yunique-panel" class="mdl-tabs__tab">Yunique</a>
+                       <a href="#yutopia-panel" class="mdl-tabs__tab">Yutopia</a>
+                    </div>
+                    <div class="mdl-tabs__panel is-active" id="yureka-panel">
+                       <p>Yureka Contents</p>
+                       <table class="device-table mdl-data-table mdl-js-data-table mdl-shadow--2dp">
                           <thead>
                             <tr>
                               <th>Date/Time</th>
                               <th>Title</th>
                               <th>SHA1</th>
                               <th>Download</th>
+                              <th>Count</th>
                             </tr>
                           </thead>
                           <tbody>
+                          <?php
+                            while ($b = $builds[2]->fetch_object()) {  
+                          ?>
                             <tr>
-                              <td>May 18, 2016 4:30:00 PM</td>
-                              <td>yufastboot-images-tomato-160518.tar.gz</td>
-                              <td>c195f626292a078b5956d06a64d826982511af61</td>
-                              <td><a href="http://yuopenos.s3.amazonaws.com/OpenSource_nightly/yufastboot-images-tomato-160518.tar.gz">Download</a></td>
+                              <td><?= date_format(date_create($b->time_added), 'M d, Y g:i:s A') ?></td>
+                              <td><?= $b->build_name ?></td>
+                              <td><?= $b->sha1 ?></td>
+                              <td>
+                                <a class="js-build-path" href="#" data-val="<?= $b->id ?>" data-href="<?= $b->build_path ?>">
+                                  Download
+                                </a>
+                              </td>
+                              <td><?= $b->downloads ?></td>
+                            </tr>
+                          <?php
+                            }
+                          ?>
+                            <tr>
+                              <td class="other-builds" colspan="5">
+                                <h5><a href="http://download.yuplaygod.com/">Other Builds</a></h5>
+                              </td>
                             </tr>
                           </tbody>
                         </table>
+
+                        <!-- Flashing instructions for Tomato -->
+                        <div>
+                          <p>
+                            <strong>Flashing Instructions</strong>
+                            <ol>
+                              <li>Flash images with Fastboot</li>
+                              <ol class="u-alpha-list">
+                                <li>Execute below commands in terminal</li>
+                                <li>
+                                  Connect device in fastboot mode<br>
+                                  <code>adb reboot bootloader</code>
+                                </li>
+                                <li>
+                                  Check if device is detecting in fastboot mode<br>
+                                  <code>fastboot -i 0x1ebf devices </code>
+                                </li>
+                                <li>
+                                  Unlock bootloader
+                                  <code>fastboot -i 0x1ebf oem unlock</code>
+                                </li>
+                                <li>
+                                  Format User data<br>
+                                  <code>fastboot -i 0x1ebf format userdata</code>
+                                </li>
+                                <li>
+                                  Flash kernel<br>
+                                  <code>astboot -i 0x1ebf flash boot boot.img</code>
+                                </li>
+                                <li>
+                                  Flash recovery<br>
+                                  <code>fastboot -i 0x1ebf flash recovery recovery.img</code>
+                                </li>
+                                <li>
+                                  Flash system partition<br>
+                                  <code>fastboot -i 0x1ebf flash system system.img</code>
+                                </li>
+                                <li>
+                                  Flash data partition<br>
+                                  <code>fastboot -i 0x1ebf flash userdata userdata.img</code>
+                                </li>
+                                <li>
+                                  Relock bootloader<br>
+                                  <code>fastboot -i 0x1ebf oem lock</code>
+                                </li>
+                                <li>
+                                  Reboot device<br>
+                                  <code>fastboot -i 0x1ebf reboot</code>
+                                </li>
+                              </ol>
+
+                              <li>
+                                <strong>Flashing zip file with ADB sideload</strong>
+                                <ol class="u-alpha-list">
+                                  <li>
+                                    Connect device in recovery mode by executing below command in terminal<br>
+                                    <code>adb reboot recovery</code>
+                                  </li>
+                                  <li>
+                                    Select Apply Update from ADB
+                                  </li>
+                                  <li>
+                                    Check if device is detecting in sideload<br>
+                                    <code>adb devices</code>
+                                  </li>
+                                  <li>
+                                    Sideload YU-OPEN-OS<br>
+                                    <code>adb sideload path_to_zipfile</code>
+                                  </li>
+                                </ol>
+                              </li>
+                            </ol>
+                          </p>                  
+                        </div>
+                        <!-- Flashing instructions ends here -->
+
                     </div>
-                  </li>
-                  <li>
-                    <div class="collapsible-header"><i class="material-icons">stay_current_landscape</i>Yuphoria</div>
-                    <div class="collapsible-body">
-                      <table class="device-table mdl-data-table mdl-js-data-table mdl-shadow--2dp">
+                    <div class="mdl-tabs__panel" id="yuphoria-panel">
+                       <p>Yuphoria Contents</p>
+                       <table class="device-table mdl-data-table mdl-js-data-table mdl-shadow--2dp">
                           <thead>
                             <tr>
                               <th>Date/Time</th>
                               <th>Title</th>
                               <th>SHA1</th>
                               <th>Download</th>
+                              <th>Count</th>
                             </tr>
                           </thead>
                           <tbody>
+                          <?php
+                            while ($b = $builds[1]->fetch_object()) {  
+                          ?>
                             <tr>
-                              <td>May 18, 2016 4:35:00 PM</td>
-                              <td>yufastboot-images-lettuce-160518.tar.gz</td>
-                              <td>14647deb1c6140d9098a9205a756f968437a085d</td>
-                              <td><a href="http://yuopenos.s3.amazonaws.com/OpenSource_nightly/yufastboot-images-lettuce-160518.tar.gz">Download</a></td>
+                              <td><?= date_format(date_create($b->time_added), 'M d, Y g:i:s A') ?></td>
+                              <td><?= $b->build_name ?></td>
+                              <td><?= $b->sha1 ?></td>
+                              <td>
+                                <a class="js-build-path" href="#" data-val="<?= $b->id ?>" data-href="<?= $b->build_path ?>">
+                                  Download
+                                </a>
+                              </td>
+                              <td><?= $b->downloads ?></td>
+                            </tr>
+                          <?php
+                            }
+                          ?>
+                            <tr>
+                              <td class="other-builds" colspan="5">
+                                <h5><a href="http://download.yuplaygod.com/">Other Builds</a></h5>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+
+                        <!-- Flashing instructions for Lettuce -->
+                        <div>
+                          <p>
+                            <strong>Flashing Instructions</strong>
+                            <ol>
+                              <li>Flash images with Fastboot</li>
+                              <ol class="u-alpha-list">
+                                <li>Execute below commands in terminal</li>
+                                <li>
+                                  Connect device in fastboot mode<br>
+                                  <code>adb reboot bootloader</code>
+                                </li>
+                                <li>
+                                  Check if device is detecting in fastboot mode<br>
+                                  <code>fastboot -i 0x2A96 devices </code>
+                                </li>
+                                <li>
+                                  Unlock bootloader
+                                  <code>fastboot -i 0x2A96 oem unlock</code>
+                                </li>
+                                <li>
+                                  Format User data<br>
+                                  <code>fastboot -i 0x2A96 format userdata</code>
+                                </li>
+                                <li>
+                                  Flash kernel<br>
+                                  <code>astboot -i 0x2A96 flash boot boot.img</code>
+                                </li>
+                                <li>
+                                  Flash recovery<br>
+                                  <code>fastboot -i 0x2A96 flash recovery recovery.img</code>
+                                </li>
+                                <li>
+                                  Flash system partition<br>
+                                  <code>fastboot -i 0x2A96 flash system system.img</code>
+                                </li>
+                                <li>
+                                  Flash data partition<br>
+                                  <code>fastboot -i 0x2A96 flash userdata userdata.img</code>
+                                </li>
+                                <li>
+                                  Relock bootloader<br>
+                                  <code>fastboot -i 0x2A96 oem lock</code>
+                                </li>
+                                <li>
+                                  Reboot device<br>
+                                  <code>fastboot -i 0x2A96 reboot</code>
+                                </li>
+                              </ol>
+
+                              <li>
+                                <strong>Flashing zip file with ADB sideload</strong>
+                                <ol class="u-alpha-list">
+                                  <li>
+                                    Connect device in recovery mode by executing below command in terminal<br>
+                                    <code>adb reboot recovery</code>
+                                  </li>
+                                  <li>
+                                    Select Apply Update from ADB
+                                  </li>
+                                  <li>
+                                    Check if device is detecting in sideload<br>
+                                    <code>adb devices</code>
+                                  </li>
+                                  <li>
+                                    Sideload YU-OPEN-OS<br>
+                                    <code>adb sideload path_to_zipfile</code>
+                                  </li>
+                                </ol>
+                              </li>
+                            </ol>
+                          </p>                  
+                        </div>
+                        <!-- Flashing instructions ends here -->
+
+                    </div>
+                    <div class="mdl-tabs__panel" id="yunique-panel">
+                       <p>Yunique Contents</p>
+                       <table class="device-table mdl-data-table mdl-js-data-table mdl-shadow--2dp">
+                          <thead>
+                            <tr>
+                              <th>Date/Time</th>
+                              <th>Title</th>
+                              <th>MD5sum</th>
+                              <th>Download</th>
+                              <th>Count</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                          <?php
+                            while ($b = $builds[0]->fetch_object()) {  
+                          ?>
+                            <tr>
+                              <td><?= date_format(date_create($b->time_added), 'M d, Y g:i:s A') ?></td>
+                              <td><?= $b->build_name ?></td>
+                              <td><?= $b->sha1 ?></td>
+                              <td>
+                                <a class="js-build-path" href="#" data-val="<?= $b->id ?>" data-href="<?= $b->build_path ?>">
+                                  Download
+                                </a>
+                              </td>
+                              <td><?= $b->downloads ?></td>
+                            </tr>
+                          <?php
+                            }
+                          ?>
+                            <tr>
+                              <td class="other-builds" colspan="5">
+                                <h5><a href="http://download.yuplaygod.com/">Other Builds</a></h5>
+                              </td>
                             </tr>
                           </tbody>
                         </table>
                     </div>
-                  </li>
-                  <li>
-                    <div class="collapsible-header"><i class="material-icons">stay_current_landscape</i>Yunique</div>
-                    <div class="collapsible-body"><p>Coming Soon</p></div>
-                  </li>
-                  <li>
-                    <div class="collapsible-header"><i class="material-icons">stay_current_landscape</i>Yuthopis</div>
-                    <div class="collapsible-body"><p>Coming Soon</p></div>
-                  </li>
-                </ul>
-
-
+                    <div class="mdl-tabs__panel" id="yutopia-panel">
+                       <p>Yutopia Contents</p>
+                       <table class="device-table mdl-data-table mdl-js-data-table mdl-shadow--2dp">
+                          <thead>
+                            <tr>
+                              <th>Date/Time</th>
+                              <th>Title</th>
+                              <th>MD5sum</th>
+                              <th>Download</th>
+                              <th>Count</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td colspan="2"><h3>Coming Soon</h3></td>
+                            </tr>
+                            <!-- <tr>
+                              <td>12-12-12-16 10:55 AM</td>
+                              <td>Yutopia_YU-OPEN-OS_&lt;revnumber&gt;</td>
+                              <td>qwerty423hdjskabkd72en%@r#CgEwsop</td>
+                              <td><a href="#">Download</a></td>
+                            </tr>
+                            <tr>
+                              <td>12-12-12-16 10:55 AM</td>
+                              <td>Yutopia_YU-OPEN-OS_&lt;revnumber&gt;</td>
+                              <td>qwerty423hdjskabkd72en%@r#CgEwsop</td>
+                              <td><a href="#">Download</a></td>
+                            </tr>
+                            <tr>
+                              <td>12-12-12-16 10:55 AM</td>
+                              <td>Yutopia_YU-OPEN-OS_&lt;revnumber&gt;</td>
+                              <td>qwerty423hdjskabkd72en%@r#CgEwsop</td>
+                              <td><a href="#">Download</a></td>
+                            </tr>
+                            <tr>
+                              <td>12-12-12-16 10:55 AM</td>
+                              <td>Yutopia_YU-OPEN-OS_&lt;revnumber&gt;</td>
+                              <td>qwerty423hdjskabkd72en%@r#CgEwsop</td>
+                              <td><a href="#">Download</a></td>
+                            </tr>
+                            <tr>
+                              <td>12-12-12-16 10:55 AM</td>
+                              <td>Yutopia_YU-OPEN-OS_&lt;revnumber&gt;</td>
+                              <td>qwerty423hdjskabkd72en%@r#CgEwsop</td>
+                              <td><a href="#">Download</a></td>
+                            </tr> -->
+                          </tbody>
+                        </table>
+                    </div>
+                  </div>
               </div>
             </div>
           </section>
@@ -590,7 +862,7 @@
               <input class="mdl-mega-footer--heading-checkbox" type="checkbox" checked>
               <h1 class="mdl-mega-footer--heading">Features</h1>
               <ul class="mdl-mega-footer--link-list">
-                <li><a href="#">About</a></li>
+                <li><a href="#">About</x`a></li>
                 <li><a href="#">Terms</a></li>
                 <li><a href="#">Partners</a></li>
                 <li><a href="#">Updates</a></li>
@@ -642,7 +914,6 @@
     </div>
     <script src="assets/js/material.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/1.1.1/typed.min.js"></script>
     <script src="assets/js/custom.js"></script>
   </body>
