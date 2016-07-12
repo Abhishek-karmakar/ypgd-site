@@ -502,10 +502,6 @@
           </section>
         </div><!-- Projects -->
 
-        <!-- Downloads -->
-        <div class="mdl-layout__tab-panel" id="downloads">
-        </div><!-- Downloads -->
-
         <!-- Footer -->
         <footer class="mdl-mega-footer">
           <div class="mdl-mega-footer--middle-section">
