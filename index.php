@@ -41,6 +41,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>YU Play Dev</title>
 
+    <!-- favicon -->
+    <link rel="icon" sizes="16x16" href="favicon.ico">
+
     <!-- Add to homescreen for Chrome on Android -->
     <meta name="mobile-web-app-capable" content="yes">
     <link rel="icon" sizes="192x192" href="images/touch/chrome-touch-icon-192x192.png">
