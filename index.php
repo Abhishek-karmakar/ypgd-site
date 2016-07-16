@@ -1,3 +1,18 @@
+<?php
+  // Enable Error reporting
+  // error_reporting(E_ALL ^ E_NOTICE);
+  // ini_set('display_errors', 1);
+  
+  require_once 'helpers/config.php';
+
+  $ch = curl_init();
+  curl_setopt($ch, CURLOPT_URL, cURL_API_URL);
+  curl_setopt($ch, CURLOPT_POST, 1);
+  curl_setopt($ch, CURLOPT_POSTFIELDS, cURL_API_KEY);
+  curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+  $leaderShipData = curl_exec($ch);
+  curl_close($ch);
+?>
 <!doctype html>
 <!--
   Material Design Lite
@@ -88,6 +103,7 @@
           <a href="#codereview" class="mdl-layout__tab">Code review</a>
           <a href="#projects" class="mdl-layout__tab">Projects</a>
           <a href="#downloads" class="mdl-layout__tab downloads">Downloads</a>
+          <a href="#leaderboard" class="mdl-layout__tab">Leader Board</a>
           <a href="#build" class="mdl-layout__tab build">Build</a>
           <a href="#forums" class="mdl-layout__tab forums">Forums</a>
         </div>
@@ -118,6 +134,10 @@
                 <p>
                   <strong>Downloads:</strong> 
                   This section let you download our freshly baked software for your devices. Also the flashing steps are present there. Use it wisely. 
+                </p>
+                <p>
+                  <strong>Leader Board:</strong> 
+                  Leader board section.
                 </p>
                 <br>
                 <p class="text-center bold">Alright, Let's Begin !!</p>
@@ -501,6 +521,47 @@
             </div>
           </section>
         </div><!-- Projects -->
+
+        <!-- Leader Board -->
+        <div class="mdl-layout__tab-panel" id="leaderboard">
+          <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+            <div class="mdl-card mdl-cell mdl-cell--12-col">
+              <div class="mdl-card__supporting-text">
+                <table class="leaderboard-table mdl-data-table">
+                  <thead class="mdl-color--grey-300">
+                    <tr>
+                      <th>Name</th>
+                      <th>Total Merge</th>
+                      <th>Active Days</th>
+                      <th>Score</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                  <?php 
+                    $leaderBoardData  = json_decode($leaderShipData, true);
+                    $tableData        = $leaderBoardData['contentList'];
+                    foreach($tableData as $obj) {
+                      $name         =  $obj['full_name'];
+                      $totalMerge   =  $obj['total_merge'];
+                      $activeDays   =  $obj['member_since'];
+                      $score        =  $obj['score'];
+                  ?>
+                      <tr class="success">
+                        <td><?= $name ?></td>
+                        <td><?= $totalMerge ?></td>
+                        <td><?= $activeDays ?></td>
+                        <td><?= $score ?></td>
+                      </tr>
+                  <?php
+                    }
+                  ?>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </section>
+        </div>
+        <!-- Leader Board -->
 
         <!-- Footer -->
         <footer class="mdl-mega-footer">

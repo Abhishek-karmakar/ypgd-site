@@ -307,3 +307,11 @@ html, body {
 td.other-builds {
   text-align: center;
 }
+
+.leaderboard-table {
+  width: 100%;
+}
+
+.leaderboard-table tr th, .leaderboard-table tr td{
+  text-align: center!important;
+}
