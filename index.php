@@ -223,7 +223,7 @@
 
                   <li>Create local branch and submit changes:</li>
                 
-                  <table>
+                  <table class="responsive-table">
                     <tr>
                       <td>
                         <strong>Example</strong>
@@ -241,7 +241,7 @@
 
                   <li>To verify:</li>
 
-                  <table>
+                  <table class="responsive-table">
                     <tr>
                       <td>
                         <strong>Example</strong>
@@ -257,7 +257,7 @@
 
                   <li>Add and commit changes:</li>
 
-                  <table>
+                  <table class="responsive-table">
                     <tr>
                       <td>
                         <strong>Example</strong>
@@ -296,7 +296,7 @@
                       <br>
                       scp -p -P 29418 &lt;Username&gt;@codereview.yuplaygod.com:hooks/commit-msg .git/hooks/ 
 
-                      <table>
+                      <table class="responsive-table">
                           <tr>
                             <td><strong>Example</strong></td>
                             <td>
@@ -314,7 +314,7 @@
                       git add &lt;files&gt;<br>
                       git commit -m "Commit Message"
 
-                      <table>
+                      <table class="responsive-table">
                         <tr>
                           <td><strong>Example</strong></td>
                           <td>
@@ -342,7 +342,7 @@
                       <br>
                       git remote add review &lt;URL&gt;<br>
 
-                      <table>
+                      <table class="responsive-table">
                         <tr>
                           <td><strong>Example</strong></td>
                           <td>
@@ -360,7 +360,7 @@
                       <br>
                       git push review HEAD:refs/for/&lt;branch&gt;
 
-                      <table>
+                      <table class="responsive-table">
                         <tr>
                           <td><strong>Example</strong></td>
                           <td>
